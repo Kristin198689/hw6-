@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(-45deg, #c8b967, #4e8a50, #848ee2, #6c3224);
+  background-size: 500% 100%;
+  animation: gradient 8s ease infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.userProfile {
+  text-align: center;
+  padding: 30px 20px;
+  border: 8px;
+  border-radius: 8px;
+  width: 250px;
+  margin: 10% 25%;
+  background-color: #171717;
+  color: white;
+  position: relative;
+}
+
+.userProfile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.userProfile h2 {
+  margin: 10px 0;
+  font-size: 21px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.userProfile p {
+  margin: 5px;
+  font-size: 18px;
+}
+.userProfile button {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 16px;
+  color: rgb(1, 1, 1);
+  margin-top: 30px;
+}
+
+.userProfile button:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.userProfile button:focus {
+  outline: none;
+}
